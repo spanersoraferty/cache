@@ -2,7 +2,7 @@
 
 namespace DfE.Data.Infrastructure.Persistence.Caching.Core
 {
-    public class MemoryCacheDefault : IOutputCache
+    public sealed class DefaultMemoryCacheProvider : IOutputCacheProvider
     {
         private static readonly MemoryCache _cache = MemoryCache.Default;
 

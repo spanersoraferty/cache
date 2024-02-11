@@ -1,6 +1,6 @@
 ﻿namespace DfE.Data.Infrastructure.Persistence.Caching.Core
 {
-    public interface IOutputCache
+    public interface IOutputCacheProvider
     {
         TObject GetCachedObject<TObject>(string key) where TObject : class;
         void AddObjectToCache<TObject>(string key, TObject @object, DateTimeOffset expiration) where TObject : class;
