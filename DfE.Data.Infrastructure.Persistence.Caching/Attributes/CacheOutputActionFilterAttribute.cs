@@ -1,10 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace DfE.Data.Infrastructure.Persistence.Caching.Core
+namespace DfE.Data.Infrastructure.Persistence.Caching.Attributes
 {
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     public sealed class CacheOutputActionFilterAttribute : ActionFilterAttribute
     {
+        public CacheOutputActionFilterAttribute()
+        {
+            // Inject configuration
+            // Inject IOutputCacheProviderFactory
+            // Inject ICacheKeyFactory
+        }
 
 
         //private const string CurrentRequestMediaType = "CacheOutput:CurrentRequestMediaType";

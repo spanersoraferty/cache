@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Caching;
 
-namespace DfE.Data.Infrastructure.Persistence.Caching.Core
+namespace DfE.Data.Infrastructure.Persistence.Caching.DefaultCacheProviders
 {
     public sealed class DefaultMemoryCacheProvider : IOutputCacheProvider
     {
@@ -41,7 +41,7 @@ namespace DfE.Data.Infrastructure.Persistence.Caching.Core
                 throw new ArgumentNullException(nameof(key));
             }
 
-            return (_cache.Get(key) is not TObject @object) ?
+            return _cache.Get(key) is not TObject @object ?
                 throw new ArgumentOutOfRangeException(key, $"Unable to derive object from memory cache with key {key}.") : @object;
         }
 

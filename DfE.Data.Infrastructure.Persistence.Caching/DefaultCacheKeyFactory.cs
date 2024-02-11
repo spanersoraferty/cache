@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace DfE.Data.Infrastructure.Persistence.Caching.Core
+namespace DfE.Data.Infrastructure.Persistence.Caching
 {
     public sealed class DefaultCacheKeyFactory : ICacheKeyFactory
     {

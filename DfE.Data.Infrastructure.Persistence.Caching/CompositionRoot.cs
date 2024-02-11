@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace DfE.Data.Infrastructure.Persistence.Caching.Core
+namespace DfE.Data.Infrastructure.Persistence.Caching
 {
     public static class CompositionRoot
     {

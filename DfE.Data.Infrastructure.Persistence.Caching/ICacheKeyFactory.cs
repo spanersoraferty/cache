@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net.Http.Headers;
 
-namespace DfE.Data.Infrastructure.Persistence.Caching.Core
+namespace DfE.Data.Infrastructure.Persistence.Caching
 {
     public interface ICacheKeyFactory
     {

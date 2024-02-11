@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DfE.Data.Infrastructure.Persistence.Caching.Core
+﻿namespace DfE.Data.Infrastructure.Persistence.Caching.DefaultCacheProviders
 {
     public sealed class DefaultRedisCacheProvider : IOutputCacheProvider
     {
